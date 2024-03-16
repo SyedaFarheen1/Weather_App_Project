@@ -15,21 +15,32 @@
   <body>
     <div class="weatherBox">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="submitForm">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Lahore</h1>
-          <p>
-            Saturday 14:38, moderate rain
-            <br />
-            Humidity: 87%, Wind: 7.2km/h
-          </p>
+        <div class="weather-data">
+          <div class="city-data">
+            <h1>Lahore</h1>
+            <p class="city-details">
+              Saturday 14:38, moderate rain
+              <br />
+              Humidity: <strong>87%</strong> , Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="temperature-data">
+            <div class="weather-app-icon">☀️</div>
+            <div class="temperature-value">27</div>
+            <div class="temperature-unit">°C</div>
+          </div>
         </div>
-        <div>☀️ 27°C</div>
       </main>
       <footer>
         This project was coded by
